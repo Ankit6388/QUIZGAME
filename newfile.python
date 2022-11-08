@@ -1,0 +1,108 @@
+#gamepractice
+print ("------WELCOME TO GAMEWORLD------")
+
+username = input ("What is your name?\n")
+
+print("What a NICE name (:\n--",username)
+ 
+userstd = input("In which class you in? \n")
+      
+print("--GREAT--" )
+      
+userage = int(input ("What is your age? \n"))
+
+if userage <= 18 and userage >= 1 :
+    print("WOW ! You are eligible for this GAME!\nRULE : FOR 'YES' TYPE (1) \n       FOR 'NO' TYPE (2)")
+else:
+       print ("SORRY ! \nYou are not eligible for this game ")
+       quit()
+            
+user = int(input("You are so excited ! \nYou want to play this game?\n"))
+
+if user == 1:
+    print("Okay ! lets play ! ")
+elif user ==2:
+    print("----BYE----")
+    print()
+        
+    quit()
+else:
+       print("*************")
+       print("wrong INPUT :",user)
+       quit("Type (1) for YES!\nType (2) for NO!")
+       
+score = 0        
+                            
+usergame = int(input("We have only one game!\nWe launch some more game soon...\nSORRY FOR IT! \nType (1) for QUIZ GAME \nType (2) for BALLOON SHOOTER\n"))
+
+if usergame == 1:
+      print()
+      print("GAME STARTED....")
+      print()
+      q1 = int(input("Q1.AI stand for?\n(1)Artificial Intelligence \n(2)Artificial Issue \n(3)Artificial Intext \n(4)Artificial Inorder\n"))
+elif usergame ==2:
+    print("We will launch this game soon...")
+    quit()
+else : 
+        print("Wrong INPUT:",usergame) 
+        quit()
+print()   
+if q1 == 1:
+    print("[correct]")
+    score += 1
+else:
+     print("[incorrect! Answer is (2)]")
+print()     
+q2 = int(input("Q2.What is your country name?\n(1)RUSSIA \n(2)PAKISTAN \n(3)INDIA \n(4)USA \n"))
+   
+if q2 == 3:
+    print("[correct]")
+    score += 1
+else:
+     print("[incorrect! Answer is (3)]")
+print()     
+q3 = input("Q3.Which one is most important person in your life? \n(1)MOM \n(2)DAD \n(3)WIFE \n(4)FRIEND\n")
+   
+if q3 == "12":
+    print("[correct]")
+    score += 1
+else:
+     print("[incorrect! Answer is (1 2)]")
+print()     
+q4 = input("Q4.LED stand for ?\n(1)LIGHT ENERGY DIODE \n(2)LIGHT EARTH DIODE \n(3)LIGHT EMITTING DIODE \n(4)LIGHT END DIODE \n")
+   
+if q4 == "3":
+    print("[correct]")
+    score += 1
+else:
+     print("[incorrect! Answer is (3)]")
+print()     
+q5 = input("Q5.OST stand for ?\n(1)ORIGINAL SAFE TIME \n(2)OPEN SOURCE TECHNOLOGY \n(3)OPEN SAFE TIME \n(4)OPEN SIGNAL TAKE\n")
+   
+if q5 == "2":
+    print("[correct]")
+    score += 1
+else:
+     print("[incorrect! Answer is (2)]") 
+     
+print()     
+print("[ "+  str( score )  +  " Question is  correct] ")
+print("[ You got "  +  str((score / 5) * 100)  +  "% ]")
+print()
+#print bye horizontal
+for row in range(7):
+    for col in range(15):
+        if(col==0) or(( col==4) and (row!=0 and row!=6)) or ((row==0 or row==3 or row==6 ) and (col>0 and col<4)) or  (col==7 and row>1)or (row==0 and col==9) or (row==1 and col==8)or (row==0 and col==5)or (row==1 and col==6)or(col==11)or(row==0 and col>10) or (row==3 and col>10)or(row==6 and col>10):
+           print("@",end=" ")
+        else:
+            print(end="  ")
+    print()
+        
+   
+        
+
+  
+
+
+ 
+    
